@@ -194,9 +194,10 @@ button{
     padding-bottom: 0;
     margin-bottom: 0;
     align-items:bottom;
-
 }
-
+.top-stack::-webkit-scrollbar{
+    display:none;
+}
 
 .main-p{
     padding-left: 10px;
@@ -228,4 +229,7 @@ button{
     margin-bottom: 0;
     width: 95%; /* Adjust as needed */
     position: relative;
+}
+.screen-stack::-webkit-scrollbar{
+    display:none;
 }
