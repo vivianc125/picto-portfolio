@@ -1,12 +1,16 @@
-
+*{
+    font-family: 'Nintendo DS BIOS';
+}
 
 .sketch-screen{
     display:flex;
     height:50%;
     margin: auto;
-    width: 100%;
+    width: 95%;
     border: 1px solid rgb(81, 182, 236);
-    border-radius:3px;
+    border-radius:8px;
+    background-color: white;
+    margin-top:10px;
 }
 
 .screen-lines{
@@ -24,7 +28,8 @@
     padding: 4px 15px;
     border-right: 2px solid rgba(125, 202, 243, 0.468);
     border-bottom: 2px solid rgba(125, 202, 243, 0.468);
-    border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius:8px;
     background-color:rgb(198, 227, 242);
     width: 15%;
     color: rgba(125, 110, 110, 0.943);
@@ -33,6 +38,7 @@
 .first-line{
     border-bottom: 1px solid rgba(125, 202, 243, 0.468);
     width: 100%;
+
 }
 .row{
     display:flex;
@@ -41,16 +47,20 @@
 .keyboard{
     display:flex;
     height:50%;
-    border: 1px solid rgb(81, 182, 236);
     border-radius:3px;
+    background-color: white;
+    margin: auto;
+    margin-top:5px;
+    width: 95%;
+    background-color: rgb(189, 184, 184);
 }
 
 .screen-container {
     margin: auto;
     max-width: 400px;
     height: 280px;
-    border: 1px solid rgb(81, 182, 236);
     border-radius:3px;
+    background-color: rgb(189, 184, 184);
 }
 
 .stack{
@@ -64,8 +74,7 @@
 
 .stack-left{
     position:relative;
-    width:5%;
-    height: 280px;
+    width:6%;
     display:flex;
     flex-direction: column;
     align-items: right;
@@ -78,4 +87,68 @@
     display:flex;
     width:100%;
     height: 50%;
+}
+.keyboard-left{
+    position: relative;
+    display:flex;
+    padding-right:250px;
+    border: 1px solid black;
+    background-color: white;
+    border-radius:8px;
+}
+.keyboard-right{
+    position: relative;
+    display:flex;
+    width:50px;
+    margin-left:5px;
+}
+
+.stack-left button{
+    background-color:rgb(189, 184, 184);
+    height: 19px;
+    width: 100%;
+    margin-top: 1px;
+}
+.scroll{
+    padding:3px 1.5px 5px 1.5px;
+    border-bottom: 1.5px dotted black;
+}
+
+.drawing-items{
+    padding:3px 1.5px 5px 1.5px;
+}
+
+.size{
+    padding:3px 1.5px 5px 1.5px;
+    border-bottom: 1.5px dotted black;
+}
+.misc-keyboards{
+    padding:3px 1.5px 5px 1.5px;
+}
+
+.misc-keyboards button{
+    margin-top:5px;
+    border-top-left-radius: 3px;
+}
+
+button{
+    border:0px;
+}
+.row .stack-left{
+    background-color:white;
+}
+.keyboard-right button{
+    background-color:rgb(189, 184, 184);
+    height: 33%;
+    width: 120%;
+    border:1px solid black;
+    margin:0;
+    background-color: white;
+}
+
+.keyboard-right .sendItem{
+    border-top-left-radius: 8px;
+}
+.keyboard-right .eraseScreen{
+    border-bottom-left-radius: 8px;
 }
