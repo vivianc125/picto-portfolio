@@ -3,15 +3,9 @@ import React, {useState, useEffect} from 'react';
 
 
 function Screen() {
-  const [activeScreen, setActiveScreen] = useState('default');
   const [history, setHistory] = useState([]);
+  const [activeContent, setActiveContent] = useState(null);
 
-  useEffect(() => {
-    const historyContainer = document.querySelector('.top-stack');
-    if (historyContainer) {
-      historyContainer.scrollTop = historyContainer.scrollHeight;
-    }
-  }, [history]);
 
   function handleClick(type){
    let content;
@@ -54,21 +48,44 @@ function Screen() {
     default:
       content = <div>hi</div>; 
   }
-    setHistory(prevHistory => [...prevHistory, content]);
+  setHistory(prevHistory => [{ content, animating: true }, ...prevHistory]);
+  setTimeout(() => {
+    setHistory(prevHistory => 
+      prevHistory.map((item, index) => 
+        index === 0 ? { ...item, animating: false } : item
+      )
+    );
+  }, 1000);
   }
 
+  function renderActiveContent() {
+    return activeContent ? (
+      <div className="screen-base">
+        {activeContent}
+      </div>
+    ) : null;
+  }
+  
   function renderHistory() {
-    return history.map((item, index) => <div className = "screen-base" key={index}>{item}</div>);
+    return history.map((item, index) => (
+      <div className={`screen-base ${item.animating ? 'animate' : ''}`} key={index}>
+          {item.content}
+      </div>
+    ));
   }
   return (
     <div className="screen">
       <div className="screen-container">
       <div className = "row">
           <div className="stack-left">
-            <div className="test">hello</div>
+            <div className="scroll">
+              <button className="sidePanel"></button>
+            </div>
           </div>
-          <div className="top-stack" >
-            {renderHistory()}
+          <div className="screen-stack" >      
+            {renderHistory()}  
+            {renderActiveContent()}
+
           </div>
         </div>
         
