@@ -79,6 +79,7 @@
     flex-direction: column;
     align-items: right;
     border: 2px solid black;
+    height: 280px;
 }
 
 
@@ -153,28 +154,48 @@ button{
     border-bottom-left-radius: 8px;
 }
 
-.screen-lines p{
-    margin: 0;
-    padding-left:20px;
-    padding-right:70px;
-}
+
 
 .screen-base{
     display:flex;
-    height:50%;
     margin: auto;
     width: 95%;
+    height:40%;
     border: 1px solid rgb(81, 182, 236);
     border-radius:8px;
     background-color: white;
     margin-top:10px;
+    margin-bottom: 0;
 }
 .top-stack{
     position:relative;
     width:95%;
-    height: 280px;
     display:flex;
     flex-direction: column;
     align-items: right;
-    overflow-y: scroll;
+    overflow-y: auto;
+    scrollbar-width: none;
+    max-height: 280px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+.top-stack::-webkit-scrollbar{
+    display:none;
+}
+
+.main-p{
+    padding-left: 10px;
+    margin: 5px;
+}
+.sub-p{
+    padding-left: 20px;
+    margin: 5px;
+}
+
+.info-button{
+    margin: 0;
+    padding-left:20px;
+    padding-right:70px;
+    padding: 0px 70px 10px 60px;
+    background-color: rgba(255, 255, 255, 0);
 }

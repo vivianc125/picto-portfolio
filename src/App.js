@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 
 
 
@@ -6,45 +6,51 @@ function Screen() {
   const [activeScreen, setActiveScreen] = useState('default');
   const [history, setHistory] = useState([]);
 
+  useEffect(() => {
+    const historyContainer = document.querySelector('.top-stack');
+    if (historyContainer) {
+      historyContainer.scrollTop = historyContainer.scrollHeight;
+    }
+  }, [history]);
+
   function handleClick(type){
    let content;
    switch (type) {
     case 'about':
         content = 
-          <div className="stack">
-            <div className = "row">
-              <div className="screenname"> vivian </div>
-              <div className = "first-line"></div>
-            </div>
-              <div className="screen-lines"> 
-            
-                <p>projects</p>
-              </div>
-              <div className="screen-lines">
-
-                <p>resume</p>
-                </div>
-              <div className="screen-lines"><p>experience</p></div>
-            </div>;
+        <div className="top-stack">
+        <div className="screenname"> about </div>
+          <p className="main-p">vivian chen</p>
+          <p className="sub-p">senior at univ. of houston</p>
+          <p className="sub-p">houston, tx</p>
+        </div>;
         break;
     case 'education':
       content =         
-      <div className="stack">
-        <div className = "row">
-          <div className="screenname"> education </div>
-          <div className = "first-line"></div>
-        </div>
-          <div className="screen-lines"> 
-            <p>university of houston</p>
-          </div>
-          <div className="screen-lines">
-            <p>b.s. in computer science</p>
-          </div>
-          <div className="screen-lines">
-            <p>may 2024</p>
-          </div>
+      <div className="top-stack">
+        <div className="screenname"> education </div>
+          <p className="main-p">university of houston</p>
+          <p className="sub-p">b.s. in computer science</p>
+          <p className="sub-p">minor in mathematics</p>
+          <p className="sub-p">may 2024</p>
         </div>;
       break;
+      case 'projects':
+        content =         
+        <div className="top-stack">
+          <div className="screenname"> projects </div>
+            <p className="main-p">pebbles goes to penguin prison</p>
+            <p className="main-p">tic-tac-toe</p>
+          </div>;
+        break;
+      case 'experience':
+        content =         
+        <div className="top-stack">
+          <div className="screenname"> experience </div>
+            <p className="main-p">web developer @ uh sugarland</p>
+          </div>;
+        break;
+      
     default:
       content = <div>hi</div>; 
   }
@@ -59,7 +65,7 @@ function Screen() {
       <div className="screen-container">
       <div className = "row">
           <div className="stack-left">
-            <div className="test"></div>
+            <div className="test">hello</div>
           </div>
           <div className="top-stack" >
             {renderHistory()}
@@ -100,15 +106,16 @@ function Screen() {
                   <div className = "first-line"></div>
                 </div>
                   <div className="screen-lines"> 
-                    <button className="about" onClick={() => handleClick('about')}>about me</button> 
-                    <p>projects</p>
+                    <button className="info-button" onClick={() => handleClick('about')}>about me</button> 
+                    <button className="info-button" onClick={() => handleClick('projects')}>projects</button>
                   </div>
                   <div className="screen-lines">
-                    <button onClick={() => handleClick('education')}>education</button>
-                    <p>resume</p>
+                    <button className="info-button" onClick={() => handleClick('education')}>education</button>
+                    <button className="info-button" onClick={() => handleClick('resume')}>resume</button>
                     </div>
-                  <div className="screen-lines"><p>experience</p></div>
-
+                  <div className="screen-lines">
+                    <button className="info-button" onClick={() => handleClick('experience')}>experience</button>
+                    </div>
                 </div>
               </div>        
                 <div className="keyboard">                            
