@@ -1,23 +1,68 @@
 import React, {useState} from 'react';
 
-function sendItem(){
 
-}
 
 function Screen() {
+  const [activeScreen, setActiveScreen] = useState('default');
+  const [history, setHistory] = useState([]);
 
+  function handleClick(type){
+   let content;
+   switch (type) {
+    case 'about':
+        content = 
+          <div className="stack">
+            <div className = "row">
+              <div className="screenname"> vivian </div>
+              <div className = "first-line"></div>
+            </div>
+              <div className="screen-lines"> 
+            
+                <p>projects</p>
+              </div>
+              <div className="screen-lines">
 
+                <p>resume</p>
+                </div>
+              <div className="screen-lines"><p>experience</p></div>
+            </div>;
+        break;
+    case 'education':
+      content =         
+      <div className="stack">
+        <div className = "row">
+          <div className="screenname"> education </div>
+          <div className = "first-line"></div>
+        </div>
+          <div className="screen-lines"> 
+            <p>university of houston</p>
+          </div>
+          <div className="screen-lines">
+            <p>b.s. in computer science</p>
+          </div>
+          <div className="screen-lines">
+            <p>may 2024</p>
+          </div>
+        </div>;
+      break;
+    default:
+      content = <div>hi</div>; 
+  }
+    setHistory(prevHistory => [...prevHistory, content]);
+  }
+
+  function renderHistory() {
+    return history.map((item, index) => <div className = "screen-base" key={index}>{item}</div>);
+  }
   return (
     <div className="screen">
       <div className="screen-container">
       <div className = "row">
           <div className="stack-left">
-            <div className="test">THINGS</div>
+            <div className="test"></div>
           </div>
-          <div className="stack">
-            <div> hi</div>
-            <div> hi</div>
-            <div> hi</div>
+          <div className="top-stack" >
+            {renderHistory()}
           </div>
         </div>
         
@@ -54,9 +99,16 @@ function Screen() {
                   <div className="screenname"> vivian </div>
                   <div className = "first-line"></div>
                 </div>
-                  <div className="screen-lines"></div>
-                  <div className="screen-lines"></div>
-                  <div className="screen-lines"></div>
+                  <div className="screen-lines"> 
+                    <button className="about" onClick={() => handleClick('about')}>about me</button> 
+                    <p>projects</p>
+                  </div>
+                  <div className="screen-lines">
+                    <button onClick={() => handleClick('education')}>education</button>
+                    <p>resume</p>
+                    </div>
+                  <div className="screen-lines"><p>experience</p></div>
+
                 </div>
               </div>        
                 <div className="keyboard">                            
