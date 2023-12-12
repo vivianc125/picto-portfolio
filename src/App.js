@@ -158,7 +158,7 @@ useEffect(() => {
   }
   return (
     <div className="screen">
-      <div className="screen-container">
+      <div className="screen-container top">
       <div className = "row">
           <div className="stack-left">
             <div className="scroll">

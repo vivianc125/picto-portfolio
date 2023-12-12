@@ -230,6 +230,8 @@ button{
     margin-bottom: 0;
     width: 95%; /* Adjust as needed */
     position: relative;
+    margin-top:1%;
+    height: 99%
 }
 .screen-stack::-webkit-scrollbar{
     display:none;
