@@ -16,7 +16,7 @@
 .screen-lines{
     position:relative;
     height: 4px;
-    padding: 13px 0px;
+    padding: 4% 0px;
     display:flex;
     flex-direction: row;
     border-bottom: 1px solid rgba(125, 202, 243, 0.468);
@@ -25,7 +25,7 @@
 
 .screenname{
     margin: 0;
-    padding: 4px 15px;
+    padding: 1.5% 17px;
     border-right: 2px solid rgba(125, 202, 243, 0.468);
     border-bottom: 2px solid rgba(125, 202, 243, 0.468);
     border-bottom-right-radius: 8px;
@@ -42,7 +42,8 @@
 }
 .row{
     display:flex;
-    justify-content: space-around;
+    flex-direction: row;
+    text-align: left;
 }
 .keyboard{
     display:flex;
@@ -53,12 +54,13 @@
     margin-top:5px;
     width: 95%;
     background-color: rgb(189, 184, 184);
+    margin-bottom:5px;
 }
 
 .screen-container {
     margin: auto;
-    max-width: 400px;
-    height: 280px;
+    max-width: 450px;
+    height: 350px;
     border-radius:3px;
     background-color: rgb(189, 184, 184);
 }
@@ -66,7 +68,7 @@
 .stack{
     position:relative;
     width:95%;
-    height: 280px;
+    height: 350px;
     display:flex;
     flex-direction: column;
     align-items: right;
@@ -78,8 +80,8 @@
     display:flex;
     flex-direction: column;
     align-items: right;
-    border: 2px solid black;
-    height: 280px;
+    border: 1px solid black;
+    height:350px;
 }
 
 .sketch-screen .stack{
@@ -90,40 +92,42 @@
 }
 .keyboard-left{
     position: relative;
-    display:flex;
-    padding-right:250px;
+    padding-right:5px;
     border: 1px solid black;
     background-color: white;
     border-radius:8px;
+    width:330px;
+    margin-bottom:5px;
 }
 .keyboard-right{
     position: relative;
     display:flex;
-    width:50px;
+    width: 50px;
     margin-left:5px;
+    margin-bottom:5px;
 }
 
 .sidePanel{
     background-color:rgb(189, 184, 184);
-    height: 19px;
+    height: 20px;
     width: 100%;
     margin-top: 1px;
 }
 .scroll{
-    padding:3px 1.5px 5px 1.5px;
+    padding:5px 1.5px 10px 1.5px;
     border-bottom: 1.5px dotted black;
 }
 
 .drawing-items{
-    padding:3px 1.5px 5px 1.5px;
+    padding:3px 1.5px 10px 1.5px;
 }
 
 .size{
-    padding:3px 1.5px 5px 1.5px;
+    padding:3px 1.5px 10px 1.5px;
     border-bottom: 1.5px dotted black;
 }
 .misc-keyboards{
-    padding:3px 1.5px 5px 1.5px;
+    padding:3px 1.5px 10px 1.5px;
 }
 
 .misc-keyboards button{
@@ -188,16 +192,13 @@ button{
     display:flex;
     flex-direction: column;
     align-items: right;
-    overflow-y: auto;
-    scrollbar-width: none;
-    max-height: 280px;
+
+    max-height: 350px;
     padding-bottom: 0;
     margin-bottom: 0;
     align-items:bottom;
 }
-.top-stack::-webkit-scrollbar{
-    display:none;
-}
+
 
 .main-p{
     padding-left: 10px;
@@ -205,26 +206,26 @@ button{
 }
 .sub-p{
     padding-left: 20px;
-    margin: 5px;
+    margin: 3px;
 }
 
 .info-button{
     margin: 0;
-    padding-left:20px;
-    padding-right:70px;
-    padding: 0px 70px 10px 60px;
+    width:33%;
+    padding: 0px 25px;
     background-color: rgba(255, 255, 255, 0);
+    font-size: 17px;
 }
 
 
 .screen-stack{
     display: flex;
     flex-direction: column-reverse;
-    justify-content: flex-start; /* Aligns content to the bottom */
+    justify-content: flex-start; 
     align-items: right;
     overflow-y: auto;
     scrollbar-width: none;
-    max-height: 280px;
+    max-height: 350px;
     padding-bottom: 0;
     margin-bottom: 0;
     width: 95%; /* Adjust as needed */
@@ -232,4 +233,61 @@ button{
 }
 .screen-stack::-webkit-scrollbar{
     display:none;
+}
+
+.row-p{
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+}
+
+.screen-info{
+    height: 100%;
+}
+.keyboard-button{
+    height: 100%;
+    width: 100%;
+}
+
+.keys button{
+    font-size: 20px;
+    height: 30px;
+    margin: 0.5 auto;
+    border: 1px solid rgb(255, 255, 255);
+    float: center;
+}
+
+.keyboard-key{
+    width:26px;
+}
+.backspace-key{
+    width:50px;
+}
+.caps-key{
+    width:40px;
+}
+.shift-key{
+    width:50px;
+}
+.enter-key{
+    width:60px;
+}
+.space-key{
+    width:120px;
+}
+
+.r1{
+    margin-left:10px;
+}
+.r2{
+    margin-left:30px;
+}
+.r3{
+    margin-left: 5px;
+}
+.r4{
+    margin-left: 5px;
+}
+.r5{
+    margin-left:50px;
 }
