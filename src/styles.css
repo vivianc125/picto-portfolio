@@ -62,6 +62,18 @@
     max-width: 450px;
     height: 350px;
     background-color: rgb(189, 184, 184);
+    border: 1px solid black;
+
+}
+
+.bottom{
+    border-bottom: 1px solid black;
+    
+}
+
+.top{
+    border-top:1px solid black;
+    border-bottom: none;
 }
 
 .stack{
@@ -79,9 +91,8 @@
     display:flex;
     flex-direction: column;
     align-items: right;
-    border: 1px solid black;
-    max-height:350px;
-    height:348px;
+    border-right: 1px solid black;
+    height:350px;
     max-width:30px;
 }
 
@@ -187,13 +198,13 @@ form::input{
     border: 1px solid rgb(81, 182, 236);
     border-radius:8px;
     background-color: white;
-    margin-top:10px;
+
     position:relative;
     bottom: 0px; 
     right: 0px; 
     height: auto;
     margin-left:10px;
-
+    margin-bottom:10px;
 }
 .screen-base.animate{
     animation: moveToHistory 1s forwards;
@@ -248,12 +259,14 @@ form::input{
     align-items: right;
     overflow-y: auto;
     scrollbar-width: none;
-    max-height: 350px;
+    max-height: 340px;
     padding-bottom: 0;
     margin-bottom: 0;
     width: 95%; 
     position: relative;
-    margin-top:1%;
+    padding-top: 1%;
+    padding-bottom:1%;
+
 }
 
 .top-stack::-webkit-scrollbar{
@@ -372,3 +385,7 @@ body {
     bottom: 0;
     width: 86%;
   }
+
+
+
+  

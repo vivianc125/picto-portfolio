@@ -138,9 +138,23 @@ useEffect(() => {
           <p className = "sub-p">p.s. - this is going to open into a new tab :{')'}</p>
         </div>;
       break;
-
+      case 'website':
+        content = 
+        <div className="top-stack">
+          <div className="screenname"> website</div>
+          <p className ="main-p">hey! thanks for looking at this silly project i made! you can see my actual website  <a href={pdf} target="_blank">here</a>.</p>
+          <p className = "sub-p">p.s. - this is going to open into a new tab :{')'}</p>
+        </div>;
+      break;
+      case 'pictochat':
+        content = 
+        <div className="top-stack">
+          <div className="screenname"> pictochat </div>
+          <p className = "main-p">i'm still in the process of fixing up my version of pictochat. thanks for your interest! check back later.</p>
+        </div>;
+      break;
   default:
-    content = <div>hi</div>; 
+    content = <div>error. somethings wrong!</div>; 
   }
   setHistory(prevHistory => [{ content, animating: true }, ...prevHistory]);
   setIsAnimating(true);
@@ -232,12 +246,12 @@ useEffect(() => {
                   <div className="screen-lines">
                     <button className="info-button" onClick={() => handleClick('education')}>education</button>
                     <button className="info-button" onClick={() => handleClick('coursework')}>coursework</button>
-                    <button className="info-button" onClick={() => handleClick('coursework')}>portfolio</button>
+                    <button className="info-button" onClick={() => handleClick('website')}>website</button>
                     </div>
                   <div className="screen-lines">
                     <button className="info-button" onClick={() => handleClick('experience')}>experience</button>
                     <button className="info-button" onClick={() => handleClick('languages')}>technical</button>
-                    <button className="info-button" onClick={() => handleClick('languages')}>pictochat</button>
+                    <button className="info-button" onClick={() => handleClick('pictochat')}>pictochat</button>
                     </div>
                     
                 </div>
