@@ -147,7 +147,7 @@ button{
 .keyboard-right button{
     background-color:rgb(189, 184, 184);
     height: 33%;
-    width: 120%;
+    width: 118%;
     border:1px solid black;
     margin:0;
     background-color: white;
@@ -176,6 +176,7 @@ form::input{
 }
 .keyboard-right .eraseScreen{
     border-bottom-left-radius: 8px;
+    font-size:15px;
 }
 
 .screen-base{
@@ -252,15 +253,13 @@ form::input{
     width: 95%; 
     position: relative;
     margin-top:1%;
-
 }
+
 .top-stack::-webkit-scrollbar{
     display:none;
     align-items:bottom;
 
 }
-
-
 
 .screen-stack::-webkit-scrollbar{
     display:none;
@@ -279,7 +278,6 @@ form::input{
     height: 100%;
     width: 100%;
 }
-
 
 .keys button{
     font-size: 20px;
@@ -337,7 +335,10 @@ button:hover{
     margin:0;
     background-color: white;
     text-align: center;
-
+    text-decoration: none;
+}
+.button-link p{
+    color: black;
 }
 .button-link:hover{
     font-weight: bold;
@@ -352,3 +353,4 @@ body {
     align-items: center;
     background-color: #f0f0f0; 
   }
+

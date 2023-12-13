@@ -137,7 +137,7 @@ useEffect(() => {
           <p className = "sub-p">p.s. - this is going to open into a new tab :{')'}</p>
         </div>;
       break;
-          
+
   default:
     content = <div>hi</div>; 
   }
@@ -167,6 +167,10 @@ useEffect(() => {
           {item.content}
       </div>
     ));
+  }
+
+  function eraseScreen(){
+    setHistory([{ content: initialContent, animating: false }]);
   }
   return (
     <div className="screen">
@@ -303,8 +307,7 @@ useEffect(() => {
                     <div className= "stack keyboard-button">
                       <a className = "button-link sendItem" href="https://github.com/vivianc125"><p>github</p></a>
                       <a className = "button-link sendBack" href="https://www.linkedin.com/in/vivian-chen1287/"><p>linkedin</p></a>
-                      <a className = "button-link eraseScreen" href="..."><p>portfolio</p></a>
-
+                      <button className = "button-link eraseScreen"onClick={eraseScreen} ><p>erase</p></button>
                     </div>
                   </div>
                 </div>
