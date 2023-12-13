@@ -40,12 +40,7 @@ Don't forget to give the project a star! Thanks again!
 ## Demo
 ![](https://github.com/vivianc125/picto-portfolio/blob/main/src/demo.gif)
 
-## Fork the Project
-Create your Feature Branch (git checkout -b feature/AmazingFeature)
-Commit your Changes (git commit -m 'Add some AmazingFeature')
-Push to the Branch (git push origin feature/AmazingFeature)
-Open a Pull Request
-License
+## License
 Distributed under the MIT License. See LICENSE for more information.
 
 ## Contact
