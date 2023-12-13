@@ -80,7 +80,8 @@
     flex-direction: column;
     align-items: right;
     border: 1px solid black;
-    height:350px;
+    max-height:350px;
+    height:348px;
     max-width:30px;
 }
 

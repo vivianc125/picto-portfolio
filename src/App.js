@@ -302,7 +302,7 @@ useEffect(() => {
                   <div className="keyboard-right">
                     <div className= "stack keyboard-button">
                       <a className = "button-link sendItem" href="https://github.com/vivianc125"><p>github</p></a>
-                      <a className = "button-link sendBack" href="https://github.com/vivianc125"><p>linkedin</p></a>
+                      <a className = "button-link sendBack" href="https://www.linkedin.com/in/vivian-chen1287/"><p>linkedin</p></a>
                       <a className = "button-link eraseScreen" href="..."><p>portfolio</p></a>
 
                     </div>
