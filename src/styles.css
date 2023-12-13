@@ -99,7 +99,7 @@
     border-radius:8px;
     width:82%;
     margin-bottom:5px;
-    height: 95%;
+    height: 94%;
 }
 .keyboard-right{
     display:flex;
@@ -112,9 +112,10 @@
 
 .sidePanel{
     background-color:rgb(189, 184, 184);
-    height: 20px;
+    height: 24px;
     width: 100%;
     margin-top: 1px;
+    color: black;
 }
 .scroll{
     padding:5px 1.5px 10px 1.5px;
@@ -327,6 +328,9 @@ button:hover{
     background-color: rgb(222, 222, 222);
 }
 
+button:hover[disabled]{
+    font-weight: lighter;
+}
 .button-link{
     background-color:rgb(189, 184, 184);
     height: 33%;
@@ -344,6 +348,14 @@ button:hover{
     font-weight: bold;
     background-color: rgb(222, 222, 222);
 }
+.keyboard-key[disabled]{
+    background-color: #f0f0f0;
+    color:black; 
+}
+.sidePanel:hover[disabled]{
+    background-color:rgb(189, 184, 184);
+    color: black;
+}
 
 body {
     margin: 0;
@@ -354,3 +366,9 @@ body {
     background-color: #f0f0f0; 
   }
 
+
+  .chat-icon{
+    position: absolute;
+    bottom: 0;
+    width: 86%;
+  }

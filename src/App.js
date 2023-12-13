@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import pdf from '../src/resume.pdf';
 
 
+
 function Screen() {
   const [history, setHistory] = useState([]);
   const [activeContent, setActiveContent] = useState(null);
@@ -178,7 +179,10 @@ useEffect(() => {
       <div className = "row">
           <div className="stack-left">
             <div className="scroll">
-              <button className="sidePanel"></button>
+              <button className="sidePanel" disabled="true"></button>
+            </div>
+            <div className="drawing-items chat-icon">
+              <button className="sidePanel " disabled="true"></button>
             </div>
           </div>
           <div className="screen-stack" > 
@@ -193,23 +197,23 @@ useEffect(() => {
         <div className = "row">
           <div className="stack-left">
             <div className="scroll">            
-              <button className="sidePanel"></button>
-              <button className="sidePanel"></button>
+              <button className="sidePanel" disabled="true"></button>
+              <button className="sidePanel" disabled="true"></button>
             </div>
             <div className="drawing-items">            
-              <button className="sidePanel"></button>
-              <button className="sidePanel"></button>
+              <button className="sidePanel" disabled="true"></button>
+              <button className="sidePanel" disabled="true"></button>
             </div>
             <div className="size">            
-              <button className="sidePanel"></button>
-              <button className="sidePanel"></button>
+              <button className="sidePanel" disabled="true"></button>
+              <button className="sidePanel" disabled="true"></button>
             </div>
             <div className="misc-keyboards">            
-              <button className="sidePanel"></button>
-              <button className="sidePanel"></button>
-              <button className="sidePanel"></button>
-              <button className="sidePanel"></button>
-              <button className="sidePanel"></button>
+              <button className="sidePanel" disabled="true">A/1</button>
+              <button className="sidePanel" disabled="true">À</button>
+              <button className="sidePanel" disabled="true"></button>
+              <button className="sidePanel" disabled="true">@</button>
+              <button className="sidePanel" disabled="true"></button>
             </div>
           
           </div>
@@ -239,67 +243,66 @@ useEffect(() => {
                 </div>
               </div>        
                 <div className="keyboard">                            
-     
                   <div className="keyboard-left">
                     <div className = "row keys r1">
-                      <button className="keyboard-key">1</button>
-                      <button className="keyboard-key">2</button>
-                      <button className="keyboard-key">3</button>
-                      <button className="keyboard-key">4</button>
-                      <button className="keyboard-key">5</button>
-                      <button className="keyboard-key">6</button>
-                      <button className="keyboard-key">7</button>
-                      <button className="keyboard-key">8</button>
-                      <button className="keyboard-key">9</button>
-                      <button className="keyboard-key">0</button>
-                      <button className="keyboard-key">-</button>
-                      <button className="keyboard-key">=</button>
+                      <button className="keyboard-key" disabled="true">1</button>
+                      <button className="keyboard-key" disabled="true">2</button>
+                      <button className="keyboard-key" disabled="true">3</button>
+                      <button className="keyboard-key" disabled="true">4</button>
+                      <button className="keyboard-key" disabled="true">5</button>
+                      <button className="keyboard-key" disabled="true">6</button>
+                      <button className="keyboard-key" disabled="true">7</button>
+                      <button className="keyboard-key" disabled="true">8</button>
+                      <button className="keyboard-key" disabled="true">9</button>
+                      <button className="keyboard-key" disabled="true">0</button>
+                      <button className="keyboard-key" disabled="true">-</button>
+                      <button className="keyboard-key" disabled="true">=</button>
                     </div>
                     <div className = "row keys r2">
-                      <button className="keyboard-key">q</button>
-                      <button className="keyboard-key">w</button>
-                      <button className="keyboard-key">e</button>
-                      <button className="keyboard-key">r</button>
-                      <button className="keyboard-key">t</button>
-                      <button className="keyboard-key">y</button>
-                      <button className="keyboard-key">u</button>
-                      <button className="keyboard-key">i</button>
-                      <button className="keyboard-key">o</button>
-                      <button className="keyboard-key">p</button>
-                      <button className="backspace-key"></button>
+                      <button className="keyboard-key" disabled="true">q</button>
+                      <button className="keyboard-key" disabled="true">w</button>
+                      <button className="keyboard-key" disabled="true">e</button>
+                      <button className="keyboard-key" disabled="true">r</button>
+                      <button className="keyboard-key" disabled="true">t</button>
+                      <button className="keyboard-key" disabled="true">y</button>
+                      <button className="keyboard-key" disabled="true">u</button>
+                      <button className="keyboard-key" disabled="true">i</button>
+                      <button className="keyboard-key" disabled="true">o</button>
+                      <button className="keyboard-key" disabled="true">p</button>
+                      <button className="keyboard-key backspace-key" disabled="true"></button>
                     </div>
                     <div className = "row keys r3">
-                      <button className="caps-key">CAPS</button>
-                      <button className="keyboard-key">a</button>
-                      <button className="keyboard-key">s</button>
-                      <button className="keyboard-key">d</button>
-                      <button className="keyboard-key">f</button>
-                      <button className="keyboard-key">g</button>
-                      <button className="keyboard-key">h</button>
-                      <button className="keyboard-key">j</button>
-                      <button className="keyboard-key">k</button>
-                      <button className="keyboard-key">l</button>
-                      <button className="enter-key"></button>
+                      <button className="keyboard-key caps-key" disabled="true">CAPS</button>
+                      <button className="keyboard-key" disabled="true">a</button>
+                      <button className="keyboard-key" disabled="true">s</button>
+                      <button className="keyboard-key" disabled="true">d</button>
+                      <button className="keyboard-key" disabled="true">f</button>
+                      <button className="keyboard-key" disabled="true">g</button>
+                      <button className="keyboard-key" disabled="true">h</button>
+                      <button className="keyboard-key" disabled="true">j</button>
+                      <button className="keyboard-key" disabled="true">k</button>
+                      <button className="keyboard-key" disabled="true">l</button>
+                      <button className="keyboard-key enter-key" disabled="true"></button>
                     </div>
                     <div className = "row keys r4">
-                      <button className="shift-key">SHIFT</button>
-                      <button className="keyboard-key">z</button>
-                      <button className="keyboard-key">x</button>
-                      <button className="keyboard-key">c</button>
-                      <button className="keyboard-key">v</button>
-                      <button className="keyboard-key">b</button>
-                      <button className="keyboard-key">n</button>
-                      <button className="keyboard-key">m</button>
-                      <button className="keyboard-key">,</button>
-                      <button className="keyboard-key">.</button>
-                      <button className="keyboard-key">/</button>
+                      <button className="keyboard-key shift-key" disabled="true">SHIFT</button>
+                      <button className="keyboard-key" disabled="true">z</button>
+                      <button className="keyboard-key" disabled="true">x</button>
+                      <button className="keyboard-key" disabled="true">c</button>
+                      <button className="keyboard-key" disabled="true">v</button>
+                      <button className="keyboard-key" disabled="true">b</button>
+                      <button className="keyboard-key" disabled="true">n</button>
+                      <button className="keyboard-key" disabled="true">m</button>
+                      <button className="keyboard-key" disabled="true">,</button>
+                      <button className="keyboard-key" disabled="true">.</button>
+                      <button className="keyboard-key" disabled="true">/</button>
                     </div>
                     <div className = "row keys r5">
-                      <button className="keyboard-key">;</button>
-                      <button className="keyboard-key">`</button>
-                      <button className="space-key">SPACE</button>
-                      <button className="keyboard-key">{'['}</button>
-                      <button className="keyboard-key">{']'}</button>
+                      <button className="keyboard-key" disabled="true">;</button>
+                      <button className="keyboard-key" disabled="true">`</button>
+                      <button className="keyboard-key space-key" disabled="true">SPACE</button>
+                      <button className="keyboard-key" disabled="true">{'['}</button>
+                      <button className="keyboard-key" disabled="true">{']'}</button>
                     </div>
 
                   </div>
