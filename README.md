@@ -37,7 +37,8 @@ I appreciate your interest in contributing to Vivian's Portfolio! If you have su
 Don't forget to give the project a star! Thanks again!
 
 ## Demo
-![Demo Animation](./demo.gif)
+![Demo Animation](../demo.gif)
+
 ## Fork the Project
 Create your Feature Branch (git checkout -b feature/AmazingFeature)
 Commit your Changes (git commit -m 'Add some AmazingFeature')
@@ -47,6 +48,6 @@ License
 Distributed under the MIT License. See LICENSE for more information.
 
 ## Contact
-Vivian Chen - LinkedIn Profile - vivianc@example.com
+Vivian Chen - linkedin.com/in/vivian-chen1287
 
 Project Link: https://github.com/vivianc125/picto-portfolio
