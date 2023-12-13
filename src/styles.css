@@ -151,7 +151,25 @@ button{
     margin:0;
     background-color: white;
 }
+.keyboard-right form{
+    background-color:rgb(189, 184, 184);
+    height: 33%;
+    width: 120%;
+    border:1px solid black;
+    margin:0;
+    background-color: white;
+}
+form::input{
+    font-weight: bold;
+    background-color: rgb(222, 222, 222);
+}
 
+.keyboard-right input{
+    position: relative;
+    border:none;
+    background-color: white;
+    margin: auto;
+}
 .keyboard-right .sendItem{
     border-top-left-radius: 8px;
 }
@@ -171,7 +189,7 @@ button{
     bottom: 0px; 
     right: 0px; 
     height: auto;
-    margin-left:5px;
+    margin-left:10px;
 
 }
 .screen-base.animate{
@@ -306,6 +324,21 @@ button{
 }
 
 button:hover{
+    font-weight: bold;
+    background-color: rgb(222, 222, 222);
+}
+
+.button-link{
+    background-color:rgb(189, 184, 184);
+    height: 33%;
+    width: 115%;
+    border:1px solid black;
+    margin:0;
+    background-color: white;
+    text-align: center;
+
+}
+.button-link:hover{
     font-weight: bold;
     background-color: rgb(222, 222, 222);
 }

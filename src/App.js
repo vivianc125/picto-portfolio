@@ -5,6 +5,7 @@ import pdf from '../src/resume.pdf';
 function Screen() {
   const [history, setHistory] = useState([]);
   const [activeContent, setActiveContent] = useState(null);
+  const [isAnimating, setIsAnimating] = useState(false);
 
   const initialContent = 
     <div className="top-stack">
@@ -15,15 +16,18 @@ function Screen() {
     </div>;
 
 useEffect(() => {
+  setIsAnimating(true);
   setHistory([{content: initialContent, animating: true}]);
   const timer = setTimeout(() => {
     setHistory([{ content: initialContent, animating: false }]);
+    setIsAnimating(false);
   }, 700);
 
   return () =>clearTimeout(timer);
 }, []);
 
   function handleClick(type){
+  if (isAnimating) return;
    let content;
    switch (type) {
     case 'about':
@@ -118,8 +122,8 @@ useEffect(() => {
               <p className="sub-p ">{'>'} vscode</p>
             </div>
             <div className="row">
-              <p className="sub-p ">{'>'} pycharm</p>
               <p className="sub-p ">{'>'} godot</p>
+              <p className="sub-p ">{'>'} pycharm</p>
             </div>
           </div>
           </div>
@@ -130,7 +134,7 @@ useEffect(() => {
         <div className="top-stack">
           <div className="screenname"> resume </div>
           <p className = "main-p">click <a href={pdf} target="_blank">here</a> to see my resume!</p>
-          <p className = "sub-p">p.s. - this is going to open a new tab :{')'}</p>
+          <p className = "sub-p">p.s. - this is going to open into a new tab :{')'}</p>
         </div>;
       break;
           
@@ -138,12 +142,14 @@ useEffect(() => {
     content = <div>hi</div>; 
   }
   setHistory(prevHistory => [{ content, animating: true }, ...prevHistory]);
+  setIsAnimating(true);
   setTimeout(() => {
     setHistory(prevHistory => 
       prevHistory.map((item, index) => 
         index === 0 ? { ...item, animating: false } : item
       )
     );
+    setIsAnimating(false);
   }, 1000);
   }
 
@@ -295,9 +301,10 @@ useEffect(() => {
                   </div>
                   <div className="keyboard-right">
                     <div className= "stack keyboard-button">
-                      <button className="sendItem">github</button>
-                      <button className="sendBack">linkedin</button>
-                      <button className="eraseScreen">portfolio</button>
+                      <a className = "button-link sendItem" href="https://github.com/vivianc125"><p>github</p></a>
+                      <a className = "button-link sendBack" href="https://github.com/vivianc125"><p>linkedin</p></a>
+                      <a className = "button-link eraseScreen" href="..."><p>portfolio</p></a>
+
                     </div>
                   </div>
                 </div>
