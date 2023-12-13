@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-
+import pdf from '../src/resume.pdf';
 
 
 function Screen() {
@@ -46,90 +46,96 @@ useEffect(() => {
           <p className="sub-p">{'>'} gpa/major gpa: 3.4/3.6</p>
         </div>;
       break;
-      case 'projects':
-        content =         
-        <div className="top-stack">
-          <div className="screenname"> projects </div>
-            <p className="main-p">pebbles goes to penguin prison</p>
-            <p className="main-p">tic-tac-toe</p>
-            <p className="main-p">analyzing factors that influence attendance rates in connecticut</p>
-          </div>;
-        break;
-      case 'experience':
-        content =         
-        <div className="top-stack">
-          <div className="screenname"> experience </div>
-            <p className="main-p">work</p>
-            <p className="sub-p">{'>'} web developer @ uh sugarland</p>
-            <p className="main-p">academic</p>
-            <p className="sub-p">{'>'} academic chair/fundraising chair @ alpha kappa delta phi</p>
-            <p className="sub-p">{'>'} member @ codeCoogs</p>
-          </div>;
-        break;
-      case 'coursework':
-        content =         
-        <div className="top-stack">
-          <div className="screenname"> coursework </div>
-          <div className = "row">
-            <div className="stack screen-info">
-              <p className="main-p ">{'>'} programming & data structures</p>
-              <p className="main-p ">{'>'} algorithms & data structures</p>
-              <p className="main-p ">{'>'} database systems</p>
-              <p className="main-p ">{'>'} computer org. & architecture</p>
+    case 'projects':
+      content =         
+      <div className="top-stack">
+        <div className="screenname"> projects </div>
+          <p className="main-p">{'>'} pebbles goes to penguin prison</p>
+          <p className="main-p">{'>'} tic-tac-toe</p>
+          <p className="main-p">{'>'} analyzing factors that influence attendance rates in connecticut</p>
+        </div>;
+      break;
+    case 'experience':
+      content =         
+      <div className="top-stack">
+        <div className="screenname"> experience </div>
+          <p className="main-p">work</p>
+          <p className="sub-p">{'>'} web developer @ uh sugarland</p>
+          <p className="main-p">academic</p>
+          <p className="sub-p">{'>'} academic chair/fundraising chair @ alpha kappa delta phi</p>
+          <p className="sub-p">{'>'} member @ codeCoogs</p>
+        </div>;
+      break;
+    case 'coursework':
+      content =         
+      <div className="top-stack">
+        <div className="screenname"> coursework </div>
+        <div className = "row">
+          <div className="stack screen-info">
+            <p className="main-p ">{'>'} programming & data structures</p>
+            <p className="main-p ">{'>'} algorithms & data structures</p>
+            <p className="main-p ">{'>'} database systems</p>
+            <p className="main-p ">{'>'} computer org. & architecture</p>
+          </div>
+          <div className="stack screen-info">
+            <p className="main-p ">{'>'} discrete mathematics </p>
+            <p className="main-p ">{'>'} data science & machine learning </p>
+            <p className="main-p ">{'>'} interactive game development</p>
+            <p className="main-p ">{'>'} digital image processing</p>
+          </div>
+          </div>
+        </div>;
+      break;
+    case 'languages':
+      content =         
+      <div className="top-stack">
+        <div className="screenname"> technical </div>
+        <div className = "row">
+          <div className="stack screen-info">
+            <p className="main-p">languages</p>
+            <div className="row">
+              <p className="sub-p ">{'>'} python   </p>
+              <p className="sub-p ">{'>'} c++</p>
             </div>
-            <div className="stack screen-info">
-              <p className="main-p ">{'>'} discrete mathematics </p>
-              <p className="main-p ">{'>'} data science & machine learning </p>
-              <p className="main-p ">{'>'} interactive game development</p>
-              <p className="main-p ">{'>'} digital image processing</p>
+            <div className="row">
+              <p className="sub-p ">{'>'} html/css</p>
+              <p className="sub-p ">{'>'} sql </p>
             </div>
-           </div>
-          </div>;
-        break;
-        case 'languages':
-        content =         
-        <div className="top-stack">
-          <div className="screenname"> technical </div>
-          <div className = "row">
-            <div className="stack screen-info">
-              <p className="main-p">languages</p>
-              <div className="row">
-                <p className="sub-p ">{'>'} python   </p>
-                <p className="sub-p ">{'>'} c++</p>
-              </div>
-              <div className="row">
-                <p className="sub-p ">{'>'} html/css</p>
-                <p className="sub-p ">{'>'} sql </p>
-              </div>
-              <div className="row">
-                <p className="sub-p ">{'>'} gdscript </p>
-                <p className="sub-p ">{'>'} php</p>
-              </div>
+            <div className="row">
+              <p className="sub-p ">{'>'} gdscript </p>
+              <p className="sub-p ">{'>'} php</p>
+            </div>
+          </div>
 
-
+          <div className="stack screen-info">
+          <p className="main-p ">frameworks & software</p>
+            <div className="row">
+              <p className="sub-p ">{'>'} macOS</p>
+              <p className="sub-p ">{'>'} node.js</p>
             </div>
-
-            <div className="stack screen-info">
-            <p className="main-p ">frameworks & software</p>
-              <div className="row">
-                <p className="sub-p ">{'>'} macOS</p>
-                <p className="sub-p ">{'>'} node.js</p>
-              </div>
-              <div className="row">
-                <p className="sub-p ">{'>'} react</p>
-                <p className="sub-p ">{'>'} vscode</p>
-              </div>
-              <div className="row">
-                <p className="sub-p ">{'>'} pycharm</p>
-                <p className="sub-p ">{'>'} godot</p>
-              </div>
+            <div className="row">
+              <p className="sub-p ">{'>'} react</p>
+              <p className="sub-p ">{'>'} vscode</p>
             </div>
-           </div>
-          </div>;
+            <div className="row">
+              <p className="sub-p ">{'>'} pycharm</p>
+              <p className="sub-p ">{'>'} godot</p>
+            </div>
+          </div>
+          </div>
+        </div>;
         break;
-      
-    default:
-      content = <div>hi</div>; 
+      case 'resume':
+        content = 
+        <div className="top-stack">
+          <div className="screenname"> resume </div>
+          <p className = "main-p">click <a href={pdf} target="_blank">here</a> to see my resume!</p>
+          <p className = "sub-p">p.s. - this is going to open a new tab :{')'}</p>
+        </div>;
+      break;
+          
+  default:
+    content = <div>hi</div>; 
   }
   setHistory(prevHistory => [{ content, animating: true }, ...prevHistory]);
   setTimeout(() => {
@@ -173,7 +179,7 @@ useEffect(() => {
         
       </div>
 
-      <div className = "screen-container">
+      <div className = "screen-container bottom">
         <div className = "row">
           <div className="stack-left">
             <div className="scroll">            
@@ -217,7 +223,7 @@ useEffect(() => {
                   <div className="screen-lines">
                     <button className="info-button" onClick={() => handleClick('experience')}>experience</button>
                     <button className="info-button" onClick={() => handleClick('languages')}>technical</button>
-
+                    <button className="info-button" onClick={() => handleClick('languages')}>pictochat</button>
                     </div>
                     
                 </div>

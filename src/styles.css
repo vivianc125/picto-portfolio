@@ -61,7 +61,6 @@
     margin: auto;
     max-width: 450px;
     height: 350px;
-    border-radius:3px;
     background-color: rgb(189, 184, 184);
 }
 
@@ -82,6 +81,7 @@
     align-items: right;
     border: 1px solid black;
     height:350px;
+    max-width:30px;
 }
 
 .sketch-screen .stack{
@@ -96,15 +96,17 @@
     border: 1px solid black;
     background-color: white;
     border-radius:8px;
-    width:330px;
+    width:82%;
     margin-bottom:5px;
+    height: 95%;
 }
 .keyboard-right{
-    position: relative;
     display:flex;
-    width: 50px;
+    width: 13%;
+    margin-right:5px;
     margin-left:5px;
     margin-bottom:5px;
+    height: 95%;
 }
 
 .sidePanel{
@@ -159,17 +161,18 @@ button{
 
 .screen-base{
     display:flex;
-    margin: auto; 
     width: 95%;
     height:40%;
     border: 1px solid rgb(81, 182, 236);
     border-radius:8px;
     background-color: white;
     margin-top:10px;
-    margin-bottom: 0;
     position:relative;
     bottom: 0px; 
     right: 0px; 
+    height: auto;
+    margin-left:5px;
+
 }
 .screen-base.animate{
     animation: moveToHistory 1s forwards;
@@ -192,13 +195,11 @@ button{
     display:flex;
     flex-direction: column;
     align-items: right;
-
     max-height: 350px;
     padding-bottom: 0;
     margin-bottom: 0;
     align-items:bottom;
 }
-
 
 .main-p{
     padding-left: 10px;
@@ -207,14 +208,15 @@ button{
 .sub-p{
     padding-left: 20px;
     margin: 3px;
+    margin-bottom: 10px;
 }
 
 .info-button{
-    margin: 0;
+    margin: auto 25px;
     width:33%;
-    padding: 0px 25px;
     background-color: rgba(255, 255, 255, 0);
     font-size: 17px;
+    text-align: center;
 }
 
 
@@ -228,11 +230,19 @@ button{
     max-height: 350px;
     padding-bottom: 0;
     margin-bottom: 0;
-    width: 95%; /* Adjust as needed */
+    width: 95%; 
     position: relative;
     margin-top:1%;
-    height: 99%
+
 }
+.top-stack::-webkit-scrollbar{
+    display:none;
+    align-items:bottom;
+
+}
+
+
+
 .screen-stack::-webkit-scrollbar{
     display:none;
 }
@@ -250,6 +260,7 @@ button{
     height: 100%;
     width: 100%;
 }
+
 
 .keys button{
     font-size: 20px;
@@ -292,4 +303,9 @@ button{
 }
 .r5{
     margin-left:50px;
+}
+
+button:hover{
+    font-weight: bold;
+    background-color: rgb(222, 222, 222);
 }
