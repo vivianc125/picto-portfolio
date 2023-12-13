@@ -223,10 +223,10 @@ useEffect(() => {
               <button className="sidePanel" disabled="true"></button>
             </div>
             <div className="misc-keyboards">            
-              <button className="sidePanel" disabled="true">A/1</button>
-              <button className="sidePanel" disabled="true">À</button>
               <button className="sidePanel" disabled="true"></button>
-              <button className="sidePanel" disabled="true">@</button>
+              <button className="sidePanel" disabled="true"></button>
+              <button className="sidePanel" disabled="true"></button>
+              <button className="sidePanel" disabled="true"></button>
               <button className="sidePanel" disabled="true"></button>
             </div>
           
