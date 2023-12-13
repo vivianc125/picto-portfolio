@@ -4,12 +4,13 @@
 Welcome to the repository for my pictochat-inspired portfolio! This application is built with React and provides an interactive way to learn more about my skills, projects, and background.
 
 Features
-Interactive UI with a virtual keyboard and dynamic content loading
+Interactive UI with dynamic content loading
 Detailed project descriptions with technologies used and challenges addressed
 Downloadable resume and direct links to my GitHub and LinkedIn profiles
 Responsive design for optimal viewing on all device sizes
-Getting Started
-Prerequisites
+
+# Getting Started
+## Prerequisites
 Before you begin, ensure you have the following installed:
 
 Node.js
@@ -37,7 +38,7 @@ I appreciate your interest in contributing to Vivian's Portfolio! If you have su
 Don't forget to give the project a star! Thanks again!
 
 ## Demo
-![Demo Animation](../demo.gif)
+![](https://github.com/vivianc125/picto-portfolio/blob/main/src/demo.gif)
 
 ## Fork the Project
 Create your Feature Branch (git checkout -b feature/AmazingFeature)
