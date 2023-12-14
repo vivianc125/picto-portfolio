@@ -142,8 +142,7 @@ useEffect(() => {
         content = 
         <div className="top-stack">
           <div className="screenname"> website</div>
-          <p className ="main-p">hey! thanks for looking at this silly project i made! you can see my actual website  <a href={pdf} target="_blank">here</a>.</p>
-          <p className = "sub-p">p.s. - this is going to open into a new tab :{')'}</p>
+          <p className ="main-p">hey! thanks for looking at this silly project i made! my personal website is still a work in progress. please check back later!</p>
         </div>;
       break;
       case 'pictochat':
