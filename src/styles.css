@@ -1,5 +1,13 @@
+@font-face {
+    font-family: 'nintendo_ds_biosregular';
+    src: url('nintendo-ds-bios-webfont.woff2') format('woff2'),
+         url('nintendo-ds-bios-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 *{
-    font-family: 'Nintendo DS BIOS';
+    font-family: 'nintendo_ds_biosregular'
 }
 
 .sketch-screen{
