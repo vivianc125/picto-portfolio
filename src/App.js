@@ -282,7 +282,7 @@ useEffect(() => {
                       <button className="keyboard-key" disabled="true">i</button>
                       <button className="keyboard-key" disabled="true">o</button>
                       <button className="keyboard-key" disabled="true">p</button>
-                      <button className="keyboard-key backspace-key" disabled="true"></button>
+                      <button className="keyboard-key backspace-key" disabled="true">DEL</button>
                     </div>
                     <div className = "row keys r3">
                       <button className="keyboard-key caps-key" disabled="true">CAPS</button>
@@ -295,7 +295,7 @@ useEffect(() => {
                       <button className="keyboard-key" disabled="true">j</button>
                       <button className="keyboard-key" disabled="true">k</button>
                       <button className="keyboard-key" disabled="true">l</button>
-                      <button className="keyboard-key enter-key" disabled="true"></button>
+                      <button className="keyboard-key enter-key" disabled="true">ENTER</button>
                     </div>
                     <div className = "row keys r4">
                       <button className="keyboard-key shift-key" disabled="true">SHIFT</button>

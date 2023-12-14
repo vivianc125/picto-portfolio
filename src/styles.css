@@ -247,7 +247,7 @@ form::input{
     margin: auto 25px;
     width:33%;
     background-color: rgba(255, 255, 255, 0);
-    font-size: 17px;
+    font-size: 1.2em;
     text-align: center;
 }
 
@@ -294,8 +294,9 @@ form::input{
 }
 
 .keys button{
-    font-size: 20px;
-    height: 30px;
+    position: relative;
+    font-size: 1em;
+    height: 1.9em;
     margin: 0.5 auto;
     border: 1px solid rgb(255, 255, 255);
     float: center;
@@ -377,6 +378,7 @@ body {
     justify-content: center;
     align-items: center;
     background-color: #f0f0f0; 
+    color:black;
   }
 
 
