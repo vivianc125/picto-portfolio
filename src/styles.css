@@ -247,7 +247,7 @@ form::input{
     margin: auto 25px;
     width:33%;
     background-color: rgba(255, 255, 255, 0);
-    font-size: 1.2em;
+    font-size: 100%;
     text-align: center;
 }
 
@@ -292,11 +292,13 @@ form::input{
     height: 100%;
     width: 100%;
 }
+.keys{
+    position: relative;
+}
 
 .keys button{
-    position: relative;
-    font-size: 1em;
-    height: 1.9em;
+    height: 3.9dvh;
+    font-size: 100%;
     margin: 0.5 auto;
     border: 1px solid rgb(255, 255, 255);
     float: center;
