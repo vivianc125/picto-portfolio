@@ -310,29 +310,27 @@ form::input{
     display:block;
     padding-top:2.5%;
     padding-bottom: 2.5%;
-    font-size: 100%;
     margin: 0.5 auto;
     border: 1px solid rgb(255, 255, 255);
     float: center;
 }
-
 .keyboard-key{
-    width:26px;
+    width:10%;
 }
 .backspace-key{
-    width:50px;
+    width:15%;
 }
 .caps-key{
-    width:40px;
+    width:12%;
 }
 .shift-key{
-    width:50px;
+    width:15%;
 }
 .enter-key{
-    width:60px;
+    width:17%;
 }
 .space-key{
-    width:120px;
+    width:50%;
 }
 
 .r1{
